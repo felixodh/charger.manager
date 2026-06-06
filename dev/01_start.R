@@ -20,12 +20,14 @@
 ##
 golem::fill_desc(
   pkg_name = "charger.manager", # The name of the golem package containing the app (typically lowercase, no underscore or periods)
-  pkg_title = "PKG_TITLE", # What the Package Does (One Line, Title Case, No Period)
-  pkg_description = "PKG_DESC.", # What the package does (one paragraph).
+  pkg_title = "Manage car charging stations", # What the Package Does (One Line, Title Case, No Period)
+  pkg_description = "It manages charging stations based on
+  demographical data, infrastructure and others. It should help to
+  plan additional charger potentials.", # What the package does (one paragraph).
   authors = person(
-    given = "AUTHOR_FIRST", # Your First Name
-    family = "AUTHOR_LAST", # Your Last Name
-    email = "AUTHOR@MAIL.COM", # Your email
+    given = "Felix", # Your First Name
+    family = "Op de Hipt", # Your Last Name
+    email = "felixcoder85@googlemail.com", # Your email
     role = c("aut", "cre") # Your role (here author/creator)
   ),
   repo_url = NULL, # The URL of the GitHub repo (optional),
@@ -35,6 +37,7 @@ golem::fill_desc(
 
 ## Install the required dev dependencies ----
 golem::install_dev_deps()
+
 
 ## Create Common Files ----
 ## See ?usethis for more information
