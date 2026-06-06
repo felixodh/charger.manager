@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+  knitr::opts_chunk$set(
+    collapse = TRUE,
+    comment = "#>",
+    fig.path = "man/figures/README-",
+    out.width = "100%"
+)
+```
+
+# `{charger.manager}`
+
+This package serves as a tool to inspect the potential installation sites
+for electric vehicle chargers.
+
+It:
+
+* gathers data sources (chargers, infrastructure, population data)
+* extracts, loads, and transforms these data
+* visualizes the data (under construction)
+* proposes additional charger potential for public and private stakeholders (under construction)
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+<!-- badges: end -->
+
+## Installation
+
+You can install the development version of `{charger.manager}` like so:
+
+```{r}
+# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```
+
+## Run
+
+You can launch the application by running:
+
+```{r, eval = FALSE}
+charger.manager::run_app()
+```
+
+## About
+
+You are reading the doc about version : `r golem::pkg_version()`
+
+This README has been compiled on the
+
+```{r}
+Sys.time()
+```
+
+
