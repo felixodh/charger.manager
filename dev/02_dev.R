@@ -18,6 +18,11 @@
 ## install.packages('attachment') # if needed.
 attachment::att_amend_desc()
 
+usethis::use_package("dplyr")
+usethis::use_package("readr")
+usethis::use_package("httr2")
+
+
 ## Add modules ----
 ## Create a module infrastructure in R/
 golem::add_module(name = "name_of_module1", with_test = TRUE) # Name of the module
@@ -25,7 +30,7 @@ golem::add_module(name = "name_of_module2", with_test = TRUE) # Name of the modu
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
-golem::add_fct("helpers", with_test = TRUE)
+golem::add_fct("geospatial_analyses")
 golem::add_utils("helpers", with_test = TRUE)
 
 ## External resources
@@ -38,7 +43,7 @@ golem::add_any_file("file.json")
 
 ## Add internal datasets ----
 ## If you have data in your package
-usethis::use_data_raw(name = "my_dataset", open = FALSE)
+usethis::use_data_raw(name = "package_data", open = FALSE)
 
 ## Tests ----
 ## Add one line by test you want to create
